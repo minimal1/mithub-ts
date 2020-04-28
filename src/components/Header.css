@@ -1,0 +1,20 @@
+/** @format */
+
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.header .header__title {
+  font-size: 18px;
+  font-weight: 300;
+  justify-self: center;
+}
+
+.header .header__column {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}

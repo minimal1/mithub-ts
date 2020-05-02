@@ -1,0 +1,30 @@
+/** @format */
+
+.commit .commit__author-avatar {
+  width: 16px;
+  height: 16x;
+}
+
+.commit .commit__author-name {
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.commit .commit__sha {
+  color: #0366d6;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.commit .commit__sha:hover {
+  text-decoration: underline;
+}
+
+.commit .commit__message {
+  color: #586069;
+  font-size: 12px;
+}
+
+.commit + .commit {
+  margin-top: 3px;
+}

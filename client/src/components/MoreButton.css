@@ -1,0 +1,17 @@
+/** @format */
+
+.more {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #e1e4e8;
+  color: #0366d6;
+  padding: 10px 0;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.more:hover {
+  background-color: #f6f8fa;
+}

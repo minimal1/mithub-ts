@@ -1,0 +1,46 @@
+/** @format */
+
+.labeled {
+  display: flex;
+  align-items: flex-start;
+}
+
+.labeled .labeled__icon {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #28a745;
+  margin-right: 14px;
+}
+
+.labeled .labeled__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.labeled .labeled__title:hover {
+  text-decoration: underline;
+}
+
+.labeled .labeled__number {
+  font-size: 16px;
+  color: #6a737d !important;
+  margin-left: 4px;
+}
+
+.labeled .labeled__description {
+  margin-top: 10px;
+}
+
+.labeled .labeled__more-info {
+  margin-top: 15px;
+}
+
+.labeled .labeled__addition {
+  color: #28a745 !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+.labeled .labeled__deletion {
+  color: #cb2431 !important;
+  font-size: 12px;
+  font-weight: 600;
+}

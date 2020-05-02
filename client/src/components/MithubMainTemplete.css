@@ -1,0 +1,11 @@
+/** @format */
+
+.mithub-main main {
+  padding: 20px 40px;
+}
+
+.mithub-main__activities h5 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}

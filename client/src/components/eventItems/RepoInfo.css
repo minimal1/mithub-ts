@@ -1,0 +1,39 @@
+/** @format */
+
+.repo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.repo .repo__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.repo .repo__title:hover {
+  color: #0366d6;
+}
+.repo .repo__description {
+  margin-top: 10px;
+  color: #586069 !important;
+  /* margin-bottom: 10px; */
+}
+
+.repo .repo__more-info {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.repo__stars i {
+  margin-right: 5px;
+}
+
+.info {
+  color: #586069;
+  font-size: 12px;
+}
+
+.info + .info {
+  margin-left: 10px;
+}

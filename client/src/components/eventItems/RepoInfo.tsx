@@ -38,29 +38,29 @@ function RepoInfo({ repoName, repoUrl, accessToken }: RepoInfoProps) {
       })
       .catch();
 
-  // const starRepo = () => {
-  //   starred
-  //     ? Axios.delete(`https://api.github.com/user/starred/${repoName}`, {
-  //         headers: {
-  //           Authorization: `token ${accessToken}`,
-  //           "Content-Length": "0",
-  //         },
-  //       })
-  //         .then((res) => {
-  //           checkStar();
-  //         })
-  //         .catch()
-  //     : Axios.put(`https://api.github.com/user/starred/${repoName}`, null, {
-  //         headers: {
-  //           Authorization: `token ${accessToken}`,
-  //           "Content-Length": "0",
-  //         },
-  //       })
-  //         .then((res) => {
-  //           checkStar();
-  //         })
-  //         .catch();
-  // };
+  const starRepo = () => {
+    starred
+      ? Axios.delete(`https://api.github.com/user/starred/${repoName}`, {
+          headers: {
+            Authorization: `token ${accessToken}`,
+            "Content-Length": "0",
+          },
+        })
+          .then((res) => {
+            checkStar();
+          })
+          .catch()
+      : Axios.put(`https://api.github.com/user/starred/${repoName}`, null, {
+          headers: {
+            Authorization: `token ${accessToken}`,
+            "Content-Length": "0",
+          },
+        })
+          .then((res) => {
+            checkStar();
+          })
+          .catch();
+  };
 
   checkStar();
   return (
@@ -95,7 +95,7 @@ function RepoInfo({ repoName, repoUrl, accessToken }: RepoInfoProps) {
           )}
         </ul>
       </div>
-      <button className='event__button'>
+      <button className='event__button' onClick={starRepo}>
         <i className='fas fa-star'></i> {starred ? "Unstar" : "Star"}
       </button>
     </div>
